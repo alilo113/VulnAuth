@@ -14,7 +14,6 @@ app.post("/signup", async (req, res) => {
             eamil: email
         })
         console.log(userDB)
-        res.status(200).send.json({message: "User signed up successfully"})
     } catch (error) {
         res.status(500).json({message: "Internal server error"})
         console.log(error)
